@@ -11,3 +11,16 @@ MySQL study for M1 Mac
 - my.conf に言語設定
 
 デバッグ用に yum install vi を記載
+
+## データベースダミーデータ
+
+/sql/dummy.csv
+
+https://testdata.userlocal.jp/
+にて作成
+
+ホスト側で作成したファイルになるため、事前に実行可能なパーミッションにしておく
+
+```
+chmod +x ./sql/dummy.csv
+```

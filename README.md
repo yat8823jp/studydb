@@ -29,10 +29,14 @@ chmod +x ./sql/dummy.csv
 
 ## Usage
 
+### install
+
 Docker を利用するので、まずはインストールしてください
 https://www.docker.com/ja-jp/
 
-### install
+### 起動
+
+#### Docker 起動
 
 イメージ作成から起動および再構築
 ```
@@ -40,6 +44,8 @@ docker-compose up --build
 ```
 
 データベースの作成まで一通り自動で行います
+
+#### 接続
 
 コンテナに接続（ コンテナ名は studydb ）
 ```
@@ -51,7 +57,9 @@ mysql に接続
 mysql -p
 ```
 
-MySQL 情報
+## MySQL
+
+### DB 情報
 
 | 項目 | 値 |
 |--|--|
@@ -59,3 +67,7 @@ MySQL 情報
 | ユーザー名 | root |
 | パスワード | root |
 
+### TABLE 情報
+
+- users ユーザー一覧
+- orders 注文一覧
